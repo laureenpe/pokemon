@@ -17,24 +17,24 @@ function Pokemon(nombre, color, poderDeAtaque) { // Funcion constructora
         pokemon.vida = pokemon.vida - this.poderDeAtaque
     }
 }
-const Pikachu = new Pokemon("Pikachu ", "amarillo", 100)
-const Charmander = new Pokemon("Charmander ", "rojo", 50)
-const Yayita = new Pokemon("Yayita ", "cafe", 70 )
+
+function Inicio()
+{
+	var pikachu =new Pokemon("Pikachu","amarillo",100);
+	var charmander=new Pokemon("Charmander",50);
 
 
 Pikachu.atacar(Charmander) //Pikachu ataca a Charmander; la funcion atacar lo que hace es que de acuerdo a la vida, le resta el poder de ataque
 
 Charmander.atacar(Pikachu) // vida(200) - poderdeataque(50) =150
-Pikachu.atacar(Yayita)
-
-console.log(Pikachu.vida)
-console.log(Yayita.vida)
+}
+/*console.log(Pikachu.vida)
 console.log(Pikachu.mostrarPokemon())
-console.log(Charmander.mostrarPokemon())
-console.log(Yayita.mostrarPokemon())
+console.log(Charmander.mostrarPokemon())*/
 
-document.write(  "Tengo a mis jugadores : " +  "<br>"+ "Charmander,  " + " Vida: " + Charmander.vida +   "<br>" + 
-"Pikachu: " +  " Vida: " + Pikachu.vida + "<br>" + "Yayita , " + "Vida: " + Yayita.vida +"<br>" );
+
+document.write(  "<br>"+ "Tengo a mis jugadores : " +  "<br>"+ "Charmander:  " + " Vida: " + pikachu.vida + " color : " + Charmander.color +  "<br>" + 
+"Pikachu: " +  " Vida: " + Pikachu.vida + " color: " + Pikachu.color );
 
 
 
