@@ -23,7 +23,6 @@ const Pikachu = new Pokemon("Pikachu ", "amarillo", 100)
 const Charmander = new Pokemon("Charmander ", "rojo", 50)
 
 /*Pikachu.atacar(Charmander) //Pikachu ataca a Charmander; la funcion atacar lo que hace es que de acuerdo a la vida, le resta el poder de ataque
-
 Charmander.atacar(Pikachu) // vida(200) - poderdeataque(50) =150*/
 
 
