@@ -4,7 +4,7 @@ function Pokemon(nombre, color, poderDeAtaque) { // Funcion constructora
 
     this.nivelDeAmistad = 0 //propiedad inicializada en 0
 
-    this.vida = 100
+    this.vida = 200
     this.poderDeAtaque = poderDeAtaque //propiedad poder de ataque pasada como parametro en la funcion constructora de pokemon
 
     this.mostrarPokemon = function() { // método que retorna una cadena
@@ -17,9 +17,16 @@ function Pokemon(nombre, color, poderDeAtaque) { // Funcion constructora
         pokemon.vida = pokemon.vida - this.poderDeAtaque
     }
 }
-const Pikachu = new Pokemon("Pikachu", "amarillo", 100)
-const Charmander = new Pokemon("Charmander", "rojo", 20)
+const Pikachu = new Pokemon("Pikachu ", "amarillo", 100)
+const Charmander = new Pokemon("Charmander ", "rojo", 50)
+const Yayita = new Pokemon("Yayita ", "cafe", 70 )
 
-Pikachu.atacar(Charmander)
+Pikachu.atacar(Charmander) //Pikachu ataca a Charmander; la funcion atacar lo que hace es que de acuerdo a la vida, le resta el poder de ataque
+Charmander.atacar(Pikachu) // vida(200) - poderdeataque(50) =150
+Pikachu.atacar(Yayita)
 console.log(Charmander.vida)
 console.log(Pikachu.vida)
+console.log(Yayita.vida)
+console.log(Pikachu.mostrarPokemon())
+console.log(Charmander.mostrarPokemon())
+console.log(Yayita.mostrarPokemon())
