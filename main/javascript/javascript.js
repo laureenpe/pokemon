@@ -24,9 +24,14 @@ const Yayita = new Pokemon("Yayita ", "cafe", 70 )
 Pikachu.atacar(Charmander) //Pikachu ataca a Charmander; la funcion atacar lo que hace es que de acuerdo a la vida, le resta el poder de ataque
 Charmander.atacar(Pikachu) // vida(200) - poderdeataque(50) =150
 Pikachu.atacar(Yayita)
-console.log(Charmander.vida)
+
+document.write(  "Tengo a mis jugadores : " +  "<br>"+ "Charmander,  " + " Vida: " + Charmander.vida +   "<br>" + 
+"Pikachu: " +  " Vida: " + Pikachu.vida + "<br>" + "Yayita , " + "Vida: " + Yayita.vida);
+
 console.log(Pikachu.vida)
 console.log(Yayita.vida)
 console.log(Pikachu.mostrarPokemon())
 console.log(Charmander.mostrarPokemon())
 console.log(Yayita.mostrarPokemon())
+
+
